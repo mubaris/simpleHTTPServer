@@ -19,6 +19,6 @@ func main() {
 	} else {
 		port = ":8080"
 	}
-	fmt.Println("Server started at " + port[1:])
+	fmt.Println("Server started at http://localhost:" + port[1:])
 	log.Fatal(http.ListenAndServe(port, http.FileServer(http.Dir(pwd))))
 }
